@@ -21,13 +21,6 @@ function sleep(ms) {
 
 const uspw = rs.question('Account? : ')
 
-var uspw = ''
-console.log(`Account can't be empty!`)
-break;
-} else if (uspw == ('SupaHotFire69')) {
-console.log(`User Authorized! Please continue`)
-continue;
-
 const dupe = (code, auth) => new Promise((resolve, reject) => {
 
     fetch(`http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/${code}`, {
